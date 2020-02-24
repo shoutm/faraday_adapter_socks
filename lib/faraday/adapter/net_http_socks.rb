@@ -1,5 +1,5 @@
 module Faraday
-  class Adapter < Middleware
+  class Adapter
 
     register_middleware net_http_socks: :NetHttpSocks
 
