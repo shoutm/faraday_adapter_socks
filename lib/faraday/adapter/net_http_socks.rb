@@ -5,7 +5,7 @@ module Faraday
 
     class NetHttpSocks < Faraday::Adapter::NetHttp
 
-      SOCKS_SCHEMES = ['socks', 'socks4', 'socks5']
+      SOCKS_SCHEMES = ['socks', 'socks4', 'socks5', 'socks5h']
 
       def net_http_connection(env)
         proxy = env[:request][:proxy]
